@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eyresgames.eyresapps.bombball.MainActivity">
+    <!--android:src="@drawable/background"-->
+
+    <ImageView
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:background="#90000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:text="BOMBER BALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="#ffff00"
+        android:id="@+id/livescv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lives"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#ffff00"
+                android:text="CURRENT \nLIVES"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="#ffd700"
+        android:id="@+id/showLeaderboards"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#ffd700"
+                android:text="WORLD\nLEADERBOARDS"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="#00FF00"
+        android:id="@+id/showAchievements"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/extraLives">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#00FF00"
+                android:text="ACHIEVEMENTS"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#00bfff"
+        android:id="@+id/start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#00bfff"
+            android:text="START"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="90dp"
+        app:cardBackgroundColor="#ff0000"
+        android:id="@+id/highScoreCV"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/start">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/highScore"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="#ff0000"
+                android:text="HIGH SCORE"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/worldHighScore"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="#ff0000"
+                android:text="GOOGLE PLAY"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/highScore" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <!-- sign-in button -->
+    <com.google.android.gms.common.SignInButton
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- sign-out button -->
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="45dp"
+        app:cardBackgroundColor="#ff00ff"
+        android:id="@+id/extraLives"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:elevation="0dp"
+        android:translationZ="-2dp">
+        <RelativeLayout
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:elevation="0dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="#ff00ff"
+                android:text="5 X \nEXTRA \nLIVES"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

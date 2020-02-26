@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "361244457893",
+    "firebase_url": "https://bombball-70032483.firebaseio.com",
+    "project_id": "bombball-70032483",
+    "storage_bucket": "bombball-70032483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361244457893:android:7cc1250522530ad3",
+        "android_client_info": {
+          "package_name": "com.eyresgames.eyresapps.bombball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361244457893-k4v90bqftl9jsk4ihrlq2r4v8o2t38cs.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "361244457893-9pmblvil55fbqdohlj5j1msr19euqu5i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eyresgames.eyresapps.bombball",
+            "certificate_hash": "28fd325b9ccf82f1c68928ac26f7854688576ee7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHtOEiZmJrQNg4LDYCo2sCedMsnmjFiNY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361244457893-k4v90bqftl9jsk4ihrlq2r4v8o2t38cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

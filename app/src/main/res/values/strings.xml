@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bomber Ball</string>
+    <!--<string name="app_id">454380402476</string>-->
+    <string name="signin_failure">Unable to sign in...</string>
+
+
+</resources>
